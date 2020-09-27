@@ -1,0 +1,45 @@
+Things needed for Sweet Treats site:
+* Nav Tabs
+* HOME
+* GALLERY/MENU
+* CONTACT/STORE HOURS
+
+HOME
+* Landing Page
+* Sliding Gallery of Featured Items
+* Fake Reviews (3)
+* “Best home-baked goods ever! I love that the cinnamon buns are served fresh and warm!”
+* “My daughter and her friends absoultey loved the birthday cake Sweet Treats made for us!”
+* Store Hours and Location
+* HOURS:
+* Monday: 10am-7pm
+* Tuesday: 10am-7pm
+* Wednesday: 10am-7pm
+* Thursday: 10am-7pm
+* Friday: 10am-7pm
+* Saturday: 12pm-8pm
+* Sunday: CLOSED
+MENU
+* Cake Slices: $2.50
+* Red Velvet
+* Double Chocolate
+* Birthday Fun-fetti Cake
+* Vanilla Bean
+* Strawberry Supreme
+* Pastries
+* Croissants: $2.00
+* Cheese Danish: $2.00
+* Wild berry Muffin: $1.50
+* Banana Nut Muffin: $1.50
+* Cinnamon Buns: $3.50
+* Cookies: $1.99
+* Chocolate Chip
+* Sugar cookie
+* Snickerdoodle
+* White Chocolate Macadamia Nut
+* Oatmeal Raisin
+
+class="menu" (MAIN CLASS/DIV)
+class="cakes"
+class="pasteries
+class="cookies"
