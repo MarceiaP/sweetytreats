@@ -11,10 +11,12 @@ h1 {
 }
 
 /*Styles for header2*/
-h2 {
-	font-size: 3em;
-	background-color: #e85a66;
+.bannerText {
+	  font-size: 3em;
+	  background-color: #e85a66;
     font-family: 'Dancing Script';
+    margin-left: 5em;
+    margin-right: 5em;
     }
 
 ul.nav {
@@ -133,4 +135,29 @@ ul.nav li.current a {
     from {opacity: .4}
     to {opacity: 1}
   }
-  
+
+  /*Column styles.*/
+  /* Create three equal columns that floats next to each other */
+  * {
+    box-sizing: border-box;
+  }
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  margin-left: 2em; /*spaces out columns*/
+  word-wrap: break-word;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnContainer {
+margin-left: 300px;
+}
+
+
