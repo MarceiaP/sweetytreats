@@ -160,4 +160,8 @@ ul.nav li.current a {
 margin-left: 300px;
 }
 
-
+.storeInfo {
+  margin-right: 10px;
+  font-size: 1.75em;
+  font-family:'Vidaloka', serif;
+}
