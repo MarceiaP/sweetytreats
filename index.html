@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sweety Treats Cafe</title>
 	<!--Make sure to link the css folder with the css file-->
 	<link rel="stylesheet" type="text/css" href="stcss/sweetstyles.css">
@@ -9,15 +9,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1>Welcome to Sweety Treats!</h1>	
-	<!--Menu bar goes here-->
-	<ul class="nav">
-  		<li><a href="#">HOME</a></li>
-  		<li><a href="#">MENU</a></li>
-  		<li><a href="#">CONTACT</a></li>
-  		<li><a href="#">CATERING</a></li>
-	</ul>	
-			<h2 class="bannerText">Cakes &bull; Cookies &bull; Pastries</h2>
+	<div class="welcome">
+		<h1>Welcome to Sweety Treats!</h1>	
+	</div>
+		<h2 class="bannerText">Cakes &bull; Cookies &bull; Pastries</h2>
 		<!--Slideshow container-->
 		<div class="slideshow container">
 
@@ -72,124 +67,120 @@
 			</script>
 			<br>
 			<!--Menu Section-->
-			<div>
-				<p style="font-size: 4em; font-family: 'Vidaloka', serif; ">Our Desserts</p>
-			</div>
+			<div><p style="font-size: 4em; font-family: 'Vidaloka', serif; ">Our Desserts</p></div>
 			<hr style="border-width: 2px; border-color: transparent; width:50%; border-top: dotted 10px rgb(0, 0, 0); border-bottom: solid 10px rgb(0, 0, 0);">
 			<!--Cake Columns-->
-		<div class="row">
-			<h3 style="font-family: 'Dancing Script'; font-size: 4em; background-color: #e85a66; margin-left: 15em; margin-right: 15em;">Cakes</h3>
+	<div class="row">
+			<div id="menuTitle"><h3>Cakes</h3></div>
 		<div class="columnContainer">
 			<div class="column">
 				<img src="st_pics/redveletcake.jpg" style="width:100%; padding: 10px;">
-				<h2 style= "font-size: 3em; font-family: 'Vidaloka', serif;">Red Velvet Cake</h2>
-				<p style= "font-size: 25px; font-style: italic;">Devilishly moist cake topped with rich cream cheese frosting.</p>
+				<div id="menuItem"><h2>Red Velvet Cake</h2></div>
+				<div id="menuDesc"><p>Devilishly moist cake topped with rich cream cheese frosting.</p></div>
 				<h2>$2.50</h2>
 			</div>
 			
 			<div class="column">
 				<img src="st_pics/chocolateCake.jpg" style="width:100%; padding: 10px;">
-				<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">Double Chocolate Cake</h2>
-				<p style= "font-size: 25px; font-style: italic;">Fudgey cake with milk chocolate icing and topped with dark chocolate shavings.</p>
+				<div id="menuItem"><h2>Double Chocolate Cake</h2></div>
+				<div id="menuDesc"><p>Fudgey cake with milk chocolate icing and topped with dark chocolate shavings.</p></div>
 				<h2>$2.50</h2>
 			</div>
 			<div class="column">
 				<img src="st_pics/bdaycake.jpg" style="object-fit: cover; width:80%; padding: 10px;">
-				<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">Birthday Fun-fetti Cake</h2>
-				<p style= "font-size: 25px; font-style: italic;">Vanilla cake with buttercream frosting and sprinkled with rainbow candies.</p>
+				<div id="menuItem"><h2>Birthday Fun-fetti Cake</h2></div>
+				<div id="menuDesc"><p>Vanilla cake with buttercream frosting and sprinkled with rainbow candies.</p></div>
 				<h2>$2.50</h2>
 			</div>
 			
 			<div class="column">
 				<img src="st_pics/strawberryCake.jpg" style="padding: 10px; object-fit: cover; width:380px; height:300px;">
-				<h2 style= "font-size: 2.75em; font-family: 'Vidaloka', serif;">Strawberry Supreme</h2>
-				<p style= "font-size: 25px; font-style: italic;">Creamy strawberry cake served with fresh strawberries.</p>
+				<div id="menuItem"><h2>Strawberry Supreme</h2></div>
+				<div id="menuDesc"><p>Creamy strawberry cake served with fresh strawberries.</p></div>
 				<h2>$2.50</h2>
 			</div>
 		</div>
 	</div>
 		
-<!--Pastries Columns-->
-<div class="row">
-	<h3 style="font-family: 'Dancing Script'; font-size: 4em; background-color: #e85a66; margin-left: 15em; margin-right: 15em;">Pastries</h3>
-<div class="columnContainer">
-	<div class="column">
-		<img src="st_pics/croissant.jpg" style="width:100%; padding: 10px;">
-		<h2 style= "font-size: 3em; font-family: 'Vidaloka', serif;">Croissants</h2>
-		<p style= "font-size: 25px; font-style: italic;">Buttery, flaky bread treat with a light sweet glaze.</p>
-		<h2>$2.00</h2>
-	</div>
+			<!--Pastries Columns-->
+	<div class="row">
+				<div id="menuTitle"><h3>Pastries</h3></div>
+			<div class="columnContainer">
+				<div class="column">
+					<img src="st_pics/croissant.jpg" style="width:100%; padding: 10px;">
+					<div id="menuItem"><h2>Croissants</h2></div>
+					<div id="menuDesc"><p>Buttery, flaky bread treat with a light sweet glaze.</p></div>
+					<h2>$2.00</h2>
+				</div>
 	
-	<div class="column">
-		<img src="st_pics/danish.jpg" style="width:100%; padding: 10px;">
-		<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">Cheese Danish</h2>
-		<p style= "font-size: 25px; font-style: italic;">Two versions of a classic pastry; one with a cream cheese center and one with fruit.</p>
-		<h2>$2.00</h2>
-	</div>
+			<div class="column">
+				<img src="st_pics/danish.jpg" style="width:100%; padding: 10px;">
+				<div id="menuItem"><h2>Danishes</h2></div>
+				<div id="menuDesc"><p>Two versions of a classic pastry; one with a cream cheese center and one with fruit.</p></div>
+				<h2>$2.00</h2>
+			</div>
 
-	<div class="column">
-		<img src="st_pics/blumuffin.jpg" style="object-fit: cover; width:100%; padding: 10px;">
-		<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">Blueberry Muffin</h2>
-		<p style= "font-size: 25px; font-style: italic;">A scrumptious muffin packed with fresh blueberries.</p>
-		<h2>$1.50</h2>
-	</div>
-	
-	<div class="column">
-		<img src="st_pics/bananaNut.jpg" style="padding: 10px; object-fit: cover; width:380px; height:300px;">
-		<h2 style= "font-size: 2.75em; font-family: 'Vidaloka', serif;">Banana Nut Muffin</h2>
-		<p style= "font-size: 25px; font-style: italic;">A sweet banana flavored muffin mixed with crunchy nuts.</p>
-		<h2>$1.50</h2>
-	</div>
+			<div class="column">
+				<img src="st_pics/blumuffin.jpg" style="object-fit: cover; width:100%; padding: 10px;">
+				<div id="menuItem"><h2>Blueberry Muffin</h2></div>
+				<div id="menuDesc"><p>A scrumptious muffin packed with fresh blueberries.</p></div>
+				<h2>$1.50</h2>
+			</div>
+			
+			<div class="column">
+				<img src="st_pics/bananaNut.jpg" style="padding: 10px; object-fit: cover; width:380px; height:300px;">
+				<div id="menuItem"><h2>Banana Nut Muffin</h2></div>
+				<div id="menuDesc"><p>A sweet banana flavored muffin mixed with crunchy nuts.</p></div>
+				<h2>$1.50</h2>
+			</div>
 
-	<div class="column">
-		<img src="st_pics/cinnabun.jpg" style="padding: 10px; object-fit: cover; width:450px; height:320px;">
-		<h2 style= "font-size: 2.75em; font-family: 'Vidaloka', serif;">Cinnamon Buns</h2>
-		<p style= "font-size: 25px; font-style: italic;">An ooey-gooey cinnamon dusted bun drizzled with warm cream cheese icing.</p>
-		<h2>$3.50</h2>
-	</div>
-	<div class="column">
-		<img src="st_pics/tiramisu.jpg" style="width:100%; padding: 10px;">
-		<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">Tiramisu</h2>
-		<p style= "font-size: 25px; font-style: italic;">An Italian favorite, a coffee flavored layered dessert coated with cocoa powder.</p>
-		<h2>$3.00</h2>
-	</div>
-</div>
+			<div class="column">
+				<img src="st_pics/cinnabun.jpg" style="padding: 10px; object-fit: cover; width:450px; height:320px;">
+				<div id="menuItem"><h2>Cinnamon Buns</h2></div>
+				<div id="menuDesc"><p>An ooey-gooey cinnamon dusted bun drizzled with warm cream cheese icing.</p></div>
+				<h2>$3.50</h2>
+			</div>
+			<div class="column">
+				<img src="st_pics/tiramisu.jpg" style="width:100%; padding: 10px;">
+				<div id="menuItem"><h2>Tiramisu</h2></div>
+				<div id="menuDesc"><p>An Italian favorite, a coffee flavored layered dessert coated with cocoa powder.</p></div>
+				<h2>$3.00</h2>
+			</div>
+		</div>
 </div>
 
 <!--Cookies Columns-->
 <div class="row">
-	<h3 style="font-family: 'Dancing Script'; font-size: 4em; background-color: #e85a66; margin-left: 15em; margin-right: 15em;">Cookies</h3>
+	<div id="menuTitle"><h3>Cookies</h3></div>
 <div class="columnContainer">
 	<div class="column">
 		<img src="st_pics/chocochipcookie.jpg" style="width:100%; padding: 10px;">
-		<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">Chocolate Chip Cookie</h2>
-		<p style= "font-size: 25px; font-style: italic;">Chewy cookies packed with chocolate morsels.</p>
+		<div id="menuItem"><h2>Chocolate Chip Cookie</h2></div>
+		<div id="menuDesc"><p>Chewy cookies packed with chocolate morsels.</p></div>
 		<h2>$1.00</h2>
 	</div>
 	
 	<div class="column">
 		<img src="st_pics/oatmealCookie.jpg" style="width:95%; padding: 10px;">
-		<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">Oatmeal Raisin Cookie</h2>
-		<p style= "font-size: 25px; font-style: italic;">Oats, nuts, spices, and delicious raisins all rolled up and baked into cookies.</p>
+		<div id="menuItem"><h2>Oatmeal Raisin Cookie</h2></div>
+		<div id="menuDesc"><p>Oats, nuts, spices, and delicious raisins all rolled up and baked into cookies.</p></div>
 		<h2>$1.00</h2>
 	</div>
 	<div class="column">
 		<img src="st_pics/snickerdoodle.jpg" style="object-fit: cover; width:105%; padding: 10px;">
-		<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">Snickerdoodle Cookie</h2>
-		<p style= "font-size: 25px; font-style: italic;">A tasty classic sprinkled with cinnamon sugar.</p>
+		<div id="menuItem"><h2>Snickerdoodle Cookie</h2></div>
+		<div id="menuDesc"><p>A tasty classic sprinkled with cinnamon sugar.</p></div>
 		<h2>$1.00</h2>
 	</div>
 	
 	<div class="column">
 		<img src="st_pics/whiteMac.jpg" style="padding: 10px; object-fit: cover; width:380px; height:300px;">
-		<h2 style= "font-size: 2.5em; font-family: 'Vidaloka', serif;">White Chocolate Macadamia Nut Cookie</h2>
-		<p style= "font-size: 25px; font-style: italic;">Decadent cookies with white-chocolate chunks and Macadamia Nuts.</p>
+		<div id="menuItem"><h2>White Chocolate Macadamia Nut Cookie</h2></div>
+		<div id="menuDesc"><p>Decadent cookies with white-chocolate chunks and Macadamia Nuts.</p></div>
 		<h2>$1.00</h2>
 	</div>
 </div>
 </div>
-
-<!--Catering Section-->
 
 <!--Contact Section-->
 <div>

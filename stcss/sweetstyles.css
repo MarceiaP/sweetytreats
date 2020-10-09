@@ -3,15 +3,18 @@ body {
 	text-align: center;
 }
 /*Title styles*/
-h1 {
+.welcome {
+  text-align: center;
 	font-size: 5em;
-	background-color: #e85a66;
-	padding: 10px;
+  background-color: #e85a66;
+  /*Margin dimenisons for 1E6 and up*/
+  margin: 10px auto 10px auto;
 	font-family: 'Vidaloka', serif;
 }
 
 /*Styles for header2*/
 .bannerText {
+    margin: 50px;
 	  font-size: 3em;
 	  background-color: #e85a66;
     font-family: 'Dancing Script';
@@ -19,33 +22,7 @@ h1 {
     margin-right: 5em;
     }
 
-ul.nav {
-    margin:0;
-    padding:0;
-    list-style:none;
-    height:36px; line-height:36px;
-    font-family: 'Vidaloka', serif;
-    font-size:2em;
-	display: inline-block;
-
-}
-ul.nav li {
-    border-right:1px solid rgb(221, 86, 138); /* you can change the border color matching to your background color */
-    float:left;
-    padding-right: 20px;
-    margin-left: 30px;
-}
-ul.nav a {
-    display:block;
-    padding:0 28px;
-    color:#e85a66;
-    text-decoration:none;
-}
-ul.nav a:hover,
-ul.nav li.current a {
-    background-color:white;
-}
-/*STYLES FOR SLIDESHOW GALLERY*/
+/*STYLES FOR SLIDESHOW GALLERY. DO NOT TOUCH!!*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -72,11 +49,6 @@ ul.nav li.current a {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
   /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
@@ -164,4 +136,22 @@ margin-left: 300px;
   margin-right: 10px;
   font-size: 1.75em;
   font-family:'Vidaloka', serif;
+}
+/*IDs can be used to identify one element, whereas a class can be used to identify more than one.*/
+#menuTitle {
+  font-family: 'Dancing Script'; 
+  font-size: 4em; 
+  background-color: #e85a66; 
+  margin-left: 15em; 
+  margin-right: 15em;
+}
+
+#menuItem {
+  font-size: 2em; 
+  font-family: 'Vidaloka', serif;
+}
+
+#menuDesc {
+  font-size: 25px; 
+  font-style: italic;
 }
