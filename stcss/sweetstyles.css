@@ -1,13 +1,34 @@
+@media screen and (max-width: 1024px) {
+
+  .columnContainer {
+    margin-left: 300px;
+    max-width: 960px;
+    margin: 0 auto;
+    }
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
 	background-color: #ffb5d0;
-	text-align: center;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  position: absolute;
 }
+
+
 /*Title styles*/
 .welcome {
   text-align: center;
 	font-size: 5em;
   background-color: #e85a66;
-  /*Margin dimenisons for 1E6 and up*/
+  /*Margin dimensions for 1E6 and up*/
   margin: 10px auto 10px auto;
 	font-family: 'Vidaloka', serif;
 }
@@ -15,13 +36,17 @@ body {
 /*Styles for header2*/
 .bannerText {
     margin: 50px;
-	  font-size: 3em;
+	  font-size: 4em;
 	  background-color: #e85a66;
     font-family: 'Dancing Script';
-    margin-left: 5em;
-    margin-right: 5em;
+    margin: 1em; 
+    padding: 10px;
     }
 
+/* Don't give fixed widths the elements. Do them here.*/
+  img.slides {
+    width: 40%;
+}
 /*STYLES FOR SLIDESHOW GALLERY. DO NOT TOUCH!!*/
 
 /* Slideshow container */
@@ -52,26 +77,6 @@ body {
   /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: black;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
   }
   
   /* The dots/bullets/indicators */
@@ -112,6 +117,8 @@ body {
   /* Create three equal columns that floats next to each other */
   * {
     box-sizing: border-box;
+    position: relative;
+    align-content: center;
   }
 .column {
   float: left;
@@ -119,6 +126,8 @@ body {
   padding: 10px;
   margin-left: 2em; /*spaces out columns*/
   word-wrap: break-word;
+  justify-items: center
+
 }
 
 /* Clear floats after the columns */
@@ -126,10 +135,7 @@ body {
   content: "";
   display: table;
   clear: both;
-}
 
-.columnContainer {
-margin-left: 300px;
 }
 
 .storeInfo {
@@ -147,11 +153,25 @@ margin-left: 300px;
 }
 
 #menuItem {
-  font-size: 2em; 
+  font-size: 1.5em; 
   font-family: 'Vidaloka', serif;
 }
 
 #menuDesc {
   font-size: 25px; 
   font-style: italic;
+}
+
+/* Proper CSS for images*/
+img.large {
+  width: 500px;
+  height: auto;
+}
+
+.columnMain {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    /*IMPORTANT. Fixes the title menu color BG. :D */
+    position: relative;
 }

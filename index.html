@@ -2,36 +2,38 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Sweety Treats Cafe</title>
 	<!--Make sure to link the css folder with the css file-->
 	<link rel="stylesheet" type="text/css" href="stcss/sweetstyles.css">
+
 	<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="welcome">
-		<h1>Welcome to Sweety Treats!</h1>	
-	</div>
-		<h2 class="bannerText">Cakes &bull; Cookies &bull; Pastries</h2>
+	<header>		
+			<h1 class="welcome">Welcome to Sweety Treats!</h1>	
+	</header>
+	<h2 class="bannerText">Cakes &bull; Cookies &bull; Pastries</h2>
 		<!--Slideshow container-->
 		<div class="slideshow container">
 
 			<!--Images with number and caption-->
 			<!--Slide 1-->
 			<div class="mySlides fade">	
-					<img src="st_pics/cinnabunMain.jpg" style="width:40%;">
+					<img src="st_pics/cinnabunMain.jpg" class="slides">
 					<!--<div class="text">Cinnamon Bun</div>-->
 			</div>
 
 			<!--Slide 2-->
 			<div class="mySlides fade">
-					<img src="st_pics/cookieMain.jpg" style="width:40%;">
+					<img src="st_pics/cookieMain.jpg" class="slides">
 					<!--<div class="text">Chocolate Chip Cookie</div>-->
 			</div>
 
 			<!--Slide 3-->
 			<div class="mySlides fade">
-					<img src="st_pics/cakeMain.jpg" style="width:40%;">
+					<img src="st_pics/cakeMain.jpg" class="slides">
 					<!--<div class="text">Red Velvet Cake</div>-->
 			</div>
 				<br>
@@ -69,32 +71,37 @@
 			<!--Menu Section-->
 			<div><p style="font-size: 4em; font-family: 'Vidaloka', serif; ">Our Desserts</p></div>
 			<hr style="border-width: 2px; border-color: transparent; width:50%; border-top: dotted 10px rgb(0, 0, 0); border-bottom: solid 10px rgb(0, 0, 0);">
+
+
+<!--NEED A CONTAINER FOR THE WHOLE MENU-->
+<div class="columnMain">
+
 			<!--Cake Columns-->
 	<div class="row">
 			<div id="menuTitle"><h3>Cakes</h3></div>
 		<div class="columnContainer">
 			<div class="column">
-				<img src="st_pics/redveletcake.jpg" style="width:100%; padding: 10px;">
+				<img src="st_pics/redveletcake_web.jpg" class="large">
 				<div id="menuItem"><h2>Red Velvet Cake</h2></div>
 				<div id="menuDesc"><p>Devilishly moist cake topped with rich cream cheese frosting.</p></div>
 				<h2>$2.50</h2>
 			</div>
 			
 			<div class="column">
-				<img src="st_pics/chocolateCake.jpg" style="width:100%; padding: 10px;">
+				<img src="st_pics/chocolateCake_web.jpg" class="large">
 				<div id="menuItem"><h2>Double Chocolate Cake</h2></div>
 				<div id="menuDesc"><p>Fudgey cake with milk chocolate icing and topped with dark chocolate shavings.</p></div>
 				<h2>$2.50</h2>
 			</div>
 			<div class="column">
-				<img src="st_pics/bdaycake.jpg" style="object-fit: cover; width:80%; padding: 10px;">
+				<img src="st_pics/bdaycake_web.jpg" class="large">
 				<div id="menuItem"><h2>Birthday Fun-fetti Cake</h2></div>
 				<div id="menuDesc"><p>Vanilla cake with buttercream frosting and sprinkled with rainbow candies.</p></div>
 				<h2>$2.50</h2>
 			</div>
 			
 			<div class="column">
-				<img src="st_pics/strawberryCake.jpg" style="padding: 10px; object-fit: cover; width:380px; height:300px;">
+				<img src="st_pics/strawberryCake_web.jpg" class="large">
 				<div id="menuItem"><h2>Strawberry Supreme</h2></div>
 				<div id="menuDesc"><p>Creamy strawberry cake served with fresh strawberries.</p></div>
 				<h2>$2.50</h2>
@@ -107,41 +114,41 @@
 				<div id="menuTitle"><h3>Pastries</h3></div>
 			<div class="columnContainer">
 				<div class="column">
-					<img src="st_pics/croissant.jpg" style="width:100%; padding: 10px;">
+					<img src="st_pics/croissant_web.jpg" class="large">
 					<div id="menuItem"><h2>Croissants</h2></div>
 					<div id="menuDesc"><p>Buttery, flaky bread treat with a light sweet glaze.</p></div>
 					<h2>$2.00</h2>
 				</div>
 	
 			<div class="column">
-				<img src="st_pics/danish.jpg" style="width:100%; padding: 10px;">
+				<img src="st_pics/danish_web.jpg" class="large">
 				<div id="menuItem"><h2>Danishes</h2></div>
 				<div id="menuDesc"><p>Two versions of a classic pastry; one with a cream cheese center and one with fruit.</p></div>
 				<h2>$2.00</h2>
 			</div>
 
 			<div class="column">
-				<img src="st_pics/blumuffin.jpg" style="object-fit: cover; width:100%; padding: 10px;">
+				<img src="st_pics/blumuffin_web.jpg" class="large">
 				<div id="menuItem"><h2>Blueberry Muffin</h2></div>
 				<div id="menuDesc"><p>A scrumptious muffin packed with fresh blueberries.</p></div>
 				<h2>$1.50</h2>
 			</div>
 			
 			<div class="column">
-				<img src="st_pics/bananaNut.jpg" style="padding: 10px; object-fit: cover; width:380px; height:300px;">
+				<img src="st_pics/bananaNut_web.jpg" class="large">
 				<div id="menuItem"><h2>Banana Nut Muffin</h2></div>
 				<div id="menuDesc"><p>A sweet banana flavored muffin mixed with crunchy nuts.</p></div>
 				<h2>$1.50</h2>
 			</div>
 
 			<div class="column">
-				<img src="st_pics/cinnabun.jpg" style="padding: 10px; object-fit: cover; width:450px; height:320px;">
+				<img src="st_pics/cinnabunMain.jpg" class="large">
 				<div id="menuItem"><h2>Cinnamon Buns</h2></div>
 				<div id="menuDesc"><p>An ooey-gooey cinnamon dusted bun drizzled with warm cream cheese icing.</p></div>
 				<h2>$3.50</h2>
 			</div>
 			<div class="column">
-				<img src="st_pics/tiramisu.jpg" style="width:100%; padding: 10px;">
+				<img src="st_pics/tiramisu_web.jpg" class="large">
 				<div id="menuItem"><h2>Tiramisu</h2></div>
 				<div id="menuDesc"><p>An Italian favorite, a coffee flavored layered dessert coated with cocoa powder.</p></div>
 				<h2>$3.00</h2>
@@ -154,33 +161,35 @@
 	<div id="menuTitle"><h3>Cookies</h3></div>
 <div class="columnContainer">
 	<div class="column">
-		<img src="st_pics/chocochipcookie.jpg" style="width:100%; padding: 10px;">
+		<img src="st_pics/chocochipcookie_web.jpg" class="large">
 		<div id="menuItem"><h2>Chocolate Chip Cookie</h2></div>
 		<div id="menuDesc"><p>Chewy cookies packed with chocolate morsels.</p></div>
 		<h2>$1.00</h2>
 	</div>
 	
 	<div class="column">
-		<img src="st_pics/oatmealCookie.jpg" style="width:95%; padding: 10px;">
+		<img src="st_pics/oatmealCookie_web.jpg" class="large">
 		<div id="menuItem"><h2>Oatmeal Raisin Cookie</h2></div>
 		<div id="menuDesc"><p>Oats, nuts, spices, and delicious raisins all rolled up and baked into cookies.</p></div>
 		<h2>$1.00</h2>
 	</div>
 	<div class="column">
-		<img src="st_pics/snickerdoodle.jpg" style="object-fit: cover; width:105%; padding: 10px;">
+		<img src="st_pics/snickerdoodle_web.jpg" class="large">
 		<div id="menuItem"><h2>Snickerdoodle Cookie</h2></div>
 		<div id="menuDesc"><p>A tasty classic sprinkled with cinnamon sugar.</p></div>
 		<h2>$1.00</h2>
 	</div>
 	
 	<div class="column">
-		<img src="st_pics/whiteMac.jpg" style="padding: 10px; object-fit: cover; width:380px; height:300px;">
+		<img src="st_pics/whiteMac_web.jpg" class="large">
 		<div id="menuItem"><h2>White Chocolate Macadamia Nut Cookie</h2></div>
 		<div id="menuDesc"><p>Decadent cookies with white-chocolate chunks and Macadamia Nuts.</p></div>
 		<h2>$1.00</h2>
 	</div>
 </div>
 </div>
+
+<!--END MENU-->
 
 <!--Contact Section-->
 <div>
@@ -197,7 +206,7 @@
 			<u><h3 style=font-size:3em;>Contact Us</h3></u>
 				<div class="storeInfo">
 					<span style='font-size:75px;'>&#9742;</span>
-					<p>910-555-0100</p>
+					<p>555-555-CAKE</p>
 					<span style='font-size:75px;'>&#9993;</span>
 					<p>sweetytreats@eats.com</p>
 				</div>
@@ -235,6 +244,8 @@
 			</div>
 			<!--Div for Reviews END-->
 		</div>
+	</div>
+		
 	</div>
 </div>
 
